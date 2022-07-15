@@ -7,7 +7,7 @@ const nameVar = "def";
 </script>
 
 <template>
-    <ul>
+    <ol>
         <TodoListItem
             v-for="todo of todos"
             :key="todo.id"
@@ -15,7 +15,8 @@ const nameVar = "def";
             :title="todo.title"
             :completed="todo.completed"
         />
-    </ul>
+        
+    </ol>
 </template>
 
 <style scoped>
